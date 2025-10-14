@@ -1,0 +1,9 @@
+/p Opening "Induration" - [ICE]
+/ja Immanence <me>
+/wait 2
+/ma Water <t>
+/wait 5
+/ja Immanence <me>
+/wait 2
+/ma Blizzard <t>
+/p Closing

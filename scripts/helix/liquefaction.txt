@@ -1,0 +1,9 @@
+/p Opening "Liquefaction" [Helix] - [FIRE]
+/ja Immanence <me>
+/wait 2
+/ma Stone <t>
+/wait 5
+/ja Immanence <me>
+/wait 2
+/ma Pyrohelix <t>
+/p Closing

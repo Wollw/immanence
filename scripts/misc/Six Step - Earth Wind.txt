@@ -1,0 +1,25 @@
+/p Opening Six Step - Stone & Aero
+/ja "Immanence" <me>
+/wait 1.5
+/ma "Stone" <t>
+/wait 4
+/ja "Immanence" <me>
+/wait 1.5
+/ma "Aero" <t>
+/wait 4
+/ja "Immanence" <me>
+/wait 1.5
+/ma "Stone" <t>
+/wait 4
+/ja "Immanence" <me>
+/wait 1.5
+/ma "Aero" <t>
+/wait 4
+/ja "Immanence" <me>
+/wait 1.5
+/ma "Stone" <t>
+/wait 4
+/ja "Immanence" <me>
+/wait 1.5
+/ma "Aero" <t>
+/p Closing

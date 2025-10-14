@@ -1,0 +1,9 @@
+/p Opening "Detonation" [Helix] - [WIND]
+/ja Immanence <me>
+/wait 2
+/ma Stone <t>
+/wait 5
+/ja Immanence <me>
+/wait 2
+/ma Anemohelix <t>
+/p Closing

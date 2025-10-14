@@ -1,0 +1,9 @@
+/p Opening "Transfixion" - [LIGHT]
+/ja Immanence <me>
+/wait 2
+/ma Noctohelix <t>
+/wait 7
+/ja Immanence <me>
+/wait 2
+/ma Luminohelix <t>
+/p Closing

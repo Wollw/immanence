@@ -1,0 +1,9 @@
+/p Opening "Compression" - [DARK]
+/ja Immanence <me>
+/wait 2
+/ma Blizzard <t>
+/wait 5
+/ja Immanence <me>
+/wait 2
+/ma Noctohelix <t>
+/p Closing

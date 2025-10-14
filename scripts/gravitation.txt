@@ -1,0 +1,9 @@
+/p Opening "Gravitation" - [EARTH / DARK]
+/ja Immanence <me>
+/wait 2
+/ma Aero <t>
+/wait 5
+/ja Immanence <me>
+/wait 2
+/ma Noctohelix <t>
+/p Closing

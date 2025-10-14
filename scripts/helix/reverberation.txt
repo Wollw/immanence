@@ -1,0 +1,9 @@
+/p Opening "Reverberation" [Helix] - [WATER]
+/ja Immanence <me>
+/wait 2
+/ma Stone <t>
+/wait 5
+/ja Immanence <me>
+/wait 2
+/ma Hydrohelix <t>
+/p Closing

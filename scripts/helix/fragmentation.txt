@@ -1,0 +1,9 @@
+/p Opening "Fragmentation" [Helix] - [LIGHTNING / WIND]
+/ja Immanence <me>
+/wait 2
+/ma Cryohelix <t>
+/wait 5
+/ja Immanence <me>
+/wait 2
+/ma Hydrohelix <t>
+/p Closing

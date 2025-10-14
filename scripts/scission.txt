@@ -1,0 +1,9 @@
+/p Opening "Scission" - [EARTH]
+/ja Immanence <me>
+/wait 2
+/ma Fire <t>
+/wait 5
+/ja Immanence <me>
+/wait 2
+/ma Stone <t>
+/p Closing

@@ -1,0 +1,9 @@
+/p Opening "Fusion" [Helix] - [FIRE / LIGHT]
+/ja Immanence <me>
+/wait 2
+/ma fire <t>
+/wait 5
+/ja Immanence <me>
+/wait 2
+/ma Ionohelix <t>
+/p Closing

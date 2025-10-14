@@ -1,0 +1,13 @@
+/p Opening "Fusion" - [FIRE -> FIRE / LIGHT]
+/ja Immanence <me>
+/wait 2
+/ma Stone <t>
+/wait 5
+/ja Immanence <me>
+/wait 2
+/ma Pyrohelix <t>
+/wait 8
+/ja Immanence <me>
+/wait 2
+/ma Ionohelix <t>
+/p Closing

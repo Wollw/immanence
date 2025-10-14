@@ -1,0 +1,9 @@
+/p Opening "Induration" [Helix] - [ICE]
+/ja Immanence <me>
+/wait 2
+/ma water <t>
+/wait 5
+/ja Immanence <me>
+/wait 2
+/ma Cryohelix <t>
+/p Closing

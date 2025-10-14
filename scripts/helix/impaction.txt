@@ -1,0 +1,9 @@
+/p Opening "Impaction" [Helix] - [LIGHTNING]
+/ja Immanence <me>
+/wait 2
+/ma blizzard <t>
+/wait 5
+/ja Immanence <me>
+/wait 2
+/ma Ionohelix <t>
+/p Closing

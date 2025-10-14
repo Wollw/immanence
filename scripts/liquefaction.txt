@@ -1,0 +1,9 @@
+/p Opening "Liquefaction" - [FIRE]
+/ja Immanence <me>
+/wait 2
+/ma Stone <t>
+/wait 5
+/ja Immanence <me>
+/wait 2
+/ma Fire <t>
+/p Closing

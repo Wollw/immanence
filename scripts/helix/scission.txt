@@ -1,0 +1,9 @@
+/p Opening "Scission" [Helix] - [EARTH]
+/ja Immanence <me>
+/wait 2
+/ma Fire <t>
+/wait 5
+/ja Immanence <me>
+/wait 2
+/ma Geohelix <t>
+/p Closing

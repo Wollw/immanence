@@ -1,0 +1,9 @@
+/p Opening "Impaction" - [LIGHTNING]
+/ja Immanence <me>
+/wait 2
+/ma Blizzard <t>
+/wait 5
+/ja Immanence <me>
+/wait 2
+/ma Thunder <t>
+/p Closing
