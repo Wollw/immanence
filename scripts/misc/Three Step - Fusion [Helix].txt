@@ -1,4 +1,4 @@
-/p Opening "Fusion" - [FIRE -> FIRE / LIGHT]
+/p Opening "Fusion" [Helix] - [FIRE -> FIRE / LIGHT]
 /ja Immanence <me>
 /wait 2
 /ma Stone <t>
