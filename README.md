@@ -2,6 +2,6 @@ Usage:
 
 ``/imm helix toggle|on|off`` to change setting to close with a helix or not.
 
-``/imm skillchain <property>|next|prev`` where <property> is a skillchain property, or another script in the ``misc`` directory to change the skillchain to make.
+``/imm skillchain <property>|next|prev`` where ``<property>`` is a skillchain property, or another script in the ``misc`` directory to change the skillchain to make.
 
 ``/imm cast`` to begin the skillchain cast.
