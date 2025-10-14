@@ -5,6 +5,8 @@ addon.desc      = 'Scholar Immanence skillchain handler.';    -- (Optional) The 
 addon.link      = '';      -- (Optional) The link to the addons homepage.
 
 require 'common';
+local chat = require 'chat';
+local util = require 'util';
 
 local CommandSettingMap = {
     sc = "Skillchain",
@@ -46,88 +48,6 @@ local SkillchainTable = {
 	[17] = {property = 'Three Step - Fusion [Helix]', elements = 'Fire -> Fire / Light'},
 };
 
-
-local setOrToggle = function(setting, arg)
-	if arg == "true" or arg == "on" then
-		return true;
-	elseif arg == "false" or arg == "off" then
-		return false;
-	elseif arg == "toggle" then
-		return not setting;
-	else
-		return setting;
-	end
-end
-
-local firstToUpper = function(str)
-    return (str:gsub("^%l", string.upper))
-end
-
-local tableContains = function(t, value)
-	for k, v in pairs(t) do
-		if v == value then
-			return k;
-		end
-	end
-	return nil;
-end
-
-local rotate = function(setting, length, arg) 
-	local direction;
-	if not arg then
-		return setting;
-	elseif arg == "next" then
-		if setting + 1 > length then
-			return 1;
-		else
-			return setting + 1;
-		end
-	elseif arg == "prev" or arg == "previous" then
-		if setting - 1 < 1 then
-			return length;
-		else
-			return setting - 1;
-		end
-	else
-		return setting;
-	end
-end
-
-local getVariantFromName = function (table, name)
-	for k, v in pairs(table) do
-		if v == name then
-			return k;
-		end
-	end
-	return nil;
-end
-
-local setOrRotate = function(table, setting, arg)
-	if arg and tableContains(table, arg) then
-		return getVariantFromName(table, arg);
-	else
-		return rotate(setting, #table, arg);
-	end
-end
-
-local tableContains = function(t, value)
-	for k, v in pairs(t) do
-		if v == value then
-			return k;
-		end
-	end
-	return nil;
-end
-
-
-local setToggleOrRotate = function (table, setting, arg)
-	if table then
-		return setOrRotate(table, setting, arg);
-	else
-		return setOrToggle(setting, arg);
-	end
-end
-
 --[[
 * event: load
 * desc : Event called when the addon is being loaded.
@@ -154,15 +74,23 @@ ashita.events.register('command', 'command_callback1', function (e)
 	if (args[1] == '/imm') then
 
         local setting = CommandSettingMap[args[2]];
+		      
+		-- Hanldle most configuration commands.
         if setting then
-            Settings[setting] = setToggleOrRotate(VariantTables[setting], Settings[setting], args[3]);
+            Settings[setting] = util.setToggleOrRotate(VariantTables[setting], Settings[setting], args[3]);
             if Settings[setting] ~= nil then
                 if VariantTables[setting] then
-                    print('[' .. addon.name .. ']' .. setting .. ": " .. VariantTables[setting][Settings[setting]]);
+					print(chat.header(util.firstToUpper(addon.name))
+						.. chat.message('Skillchain: ')
+						.. chat.color1(2, SkillchainTable[Settings[setting]].property)
+						.. ' [' .. chat.color1(2, SkillchainTable[Settings[setting]].elements) .. ']');
                 else
-                    print('[' .. addon.name .. ']' .. setting .. ": " .. (Settings[setting] and "On" or "Off"));
+					print(chat.header(util.firstToUpper(addon.name))
+						.. chat.message('Helix: ')
+						.. chat.color2(2, Settings[setting]));
                 end
             end
+		-- Start a skillchain.
         elseif args[2] == 'cast' then
             local command = '/exec "..\\addons\\' .. addon.name .. '\\' .. 'scripts\\';
             if (Settings.Skillchain <= 12) then
@@ -175,6 +103,9 @@ ashita.events.register('command', 'command_callback1', function (e)
                 command = command .. SkillchainTable[Settings.Skillchain].property;
             end
             command = command .. '"';
+			print(chat.header(util.firstToUpper(addon.name))
+				.. chat.message('Casting: ')
+				.. chat.color1(2, VariantTables['Skillchain'][Settings['Skillchain']]));
             AshitaCore:GetChatManager():QueueCommand(-1, command);
         end
     end
