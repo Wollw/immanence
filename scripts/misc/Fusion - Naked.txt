@@ -1,0 +1,12 @@
+/p Opening "Fusion" [Naked] - [FIRE / LIGHT]
+/sch nakedcast on
+/ja Immanence <me>
+/wait 2
+/ma Fire <t>
+/wait 5
+/ja Immanence <me>
+/wait 2
+/ma Thunder <t>
+/p Closing
+/wait 3
+/sch nakedcast off

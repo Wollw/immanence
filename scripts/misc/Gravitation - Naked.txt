@@ -1,0 +1,12 @@
+/p Opening "Gravitation" [Naked] - [EARTH / DARK]
+/sch nakedcast on
+/ja Immanence <me>
+/wait 2
+/ma Aero <t>
+/wait 5
+/ja Immanence <me>
+/wait 2
+/ma Noctohelix <t>
+/p Closing
+/wait 3
+/sch nakedcast off
